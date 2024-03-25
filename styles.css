@@ -1,0 +1,115 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(156, 204, 83);
+    gap: 15px;
+    padding: 9px;
+  }
+  header .logo{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  header .busqueda{
+    display: flex;
+  }
+  header img {
+    height: 80px;
+
+  }
+  a {
+    text-decoration: none;
+  padding: 15px;
+  }
+
+  
+
+  .slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+
+
+  .slider .slide-track{
+    display: flex;
+    animation:scroll 40s linear  infinite;
+    width: calc(200px*14);
+    align-items: center;
+  }
+
+  .slider .slide {
+    width: 200px;
+    
+  }
+
+  .slider .slide img {
+    width: 100%;
+    
+  }
+
+  @keyframes scroll {
+      0%{
+          transform:translateX(0)
+        
+      }
+      100%{
+        transform: translateX(calc(-200px *7))
+      }
+  }
+
+  .receta{
+    width: 20vw;
+    border-radius: 5px;
+    border: 0px solid red;
+    display: block;
+    justify-content: flex-end;
+    color: black;
+    box-shadow: 5px 5px 25px 1px;
+    overflow: hidden;
+
+}
+
+  .receta img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-recetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    gap: 20px;
+  }

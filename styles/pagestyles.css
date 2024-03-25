@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(156, 204, 83);
+    gap: 15px;
+    padding: 9px;
+  }
+  header .logo{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  header .busqueda{
+    display: flex;
+  }
+  header img {
+    height: 80px;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .receta{
+    width: 35%;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+
+  }
+
